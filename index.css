@@ -1,0 +1,43 @@
+body{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+#container{
+    padding: 60px 20px 60px 20px;
+    background-color: black;
+    height: 400px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.dcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display{
+    height: 60px;
+    width: 250px;
+}
+.size{
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+}
+.clear{
+    height: 40px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+.ccont{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
