@@ -6,7 +6,7 @@ body{
     height: 600px;
 }
 #container{
-    padding: 60px 20px 60px 20px;
+    padding: 60px 20px 50px 20px;
     background-color: black;
     height: 400px;
     width: 20%;
@@ -24,6 +24,8 @@ body{
 .display{
     height: 60px;
     width: 250px;
+    font-size: 30px;
+    font-weight: bold;
 }
 .size{
     height: 60px;
