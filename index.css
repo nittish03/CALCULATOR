@@ -16,6 +16,7 @@ body{
     align-items: center;
     border-radius: 5px;
 }
+
 .dcont{
     display: flex;
     justify-content: center;
@@ -31,11 +32,15 @@ body{
     height: 60px;
     width: 60px;
     margin: 5px;
+    font-size: 30px;
+    font-weight: 700;
 }
 .clear{
     height: 40px;
     width: 150px;
     margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
 }
 .ccont{
     margin-top: 10px;
