@@ -9,7 +9,7 @@ function calculate(){
     sv.value=eval(sv.value);
 }
 function backspace(){
-    
+    sv.value=sv.value.substring(0,sv.value.length-1);
 }
 let nothing=document.getElementById("clear");
 nothing.addEventListener("click",clearvalue);

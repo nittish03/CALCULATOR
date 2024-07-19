@@ -1,58 +1,182 @@
-body{
-    background-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --text-color: #ecf0f1;
+    --button-color: #34495e;
+}
+
+body {
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
-#container{
-    padding: 60px 20px 50px 20px;
-    background-color: black;
-    height: 400px;
-    width: 20%;
+
+#container {
+    padding: 30px 20px;
+    background-color: var(--primary-color);
+    width: 90%;
+    max-width: 400px;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.dcont{
+.dcont {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
-.display{
-    height: 60px;
-    width: 250px;
-    font-size: 30px;
+
+.display {
+    height: 70px;
+    width: 100%;
+    font-size: 2rem;
     font-weight: bold;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
 }
-.size{
+
+.size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 60px;
-    width: 60px;
-    margin: 5px;
-    font-size: 30px;
+    width: 80px;
+    margin: 10px;
+    font-size: 1.5rem;
     font-weight: 700;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.1s;
 }
-.ccont{
+
+.size:hover {
+    background-color: var(--accent-color);
+}
+
+.size:active {
+    transform: scale(0.95);
+}
+
+.ccont {
     margin-top: 10px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#clear {
+    height: 50px;
+    width: calc(70% - 10px);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#clear:hover {
+    background-color: #c0392b;
+}
+
+#clear:active {
+    transform: scale(0.95);
+}
+
+.dfc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.df {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-#clear{
-    height: 40px;
-    width: 150px;
+
+.backspace {
+    height: 50px;
+    width: calc(30% - 10px);
     margin-bottom: 10px;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: 600;
+    background-color: var(--button-color);
+    color: var (--text-color);
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.1s;
 }
-.backspace{
-    height: 40px;
-    width: 40px;
-    margin-bottom: 10px;
-    font-size: 30px;
-    font-weight: 600;
-    margin-left: 30px;
+
+.backspace:hover {
+    background-color: var(--accent-color);
+}
+
+.backspace:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 480px) {
+    #container {
+        width: 95%;
+        padding: 20px 10px;
+    }
+
+    .size, #clear, .backspace {
+        font-size: 1.2rem;
+        height: 60px;
+        width: 80px;
+    }
+
+    .display {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .size, #clear, .backspace {
+        font-size: 1.3rem;
+        height: 70px;
+        width: 90px;
+    }
+
+    .display {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .size, #clear, .backspace {
+        font-size: 1.4rem;
+        height: 75px;
+        width: 95px;
+    }
+
+    .display {
+        font-size: 2rem;
+    }
 }
