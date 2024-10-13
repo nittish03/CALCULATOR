@@ -141,39 +141,30 @@ body {
 }
 
 @media (max-width: 480px) {
-    #container {
-        width: 95%;
-        padding: 20px 10px;
+    .size {
+        width: 70px;
+        height: 50px;
     }
 
-    .size, #clear, .backspace {
-        font-size: 1.2rem;
+    .display {
+        font-size: 1.6rem;
         height: 60px;
-        width: 80px;
     }
-
-    .display {
-        font-size: 1.8rem;
+    
+    #container {
+        padding: 10px;
+        width: 100%;
     }
 }
 
-@media (max-width: 768px) {
-    .size, #clear, .backspace {
-        font-size: 1.3rem;
-        height: 70px;
+@media (min-width: 768px) and (max-width: 1024px) {
+    #container {
+        width: 80%;
+    }
+
+    .size {
         width: 90px;
-    }
-
-    .display {
-        font-size: 1.9rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    .size, #clear, .backspace {
-        font-size: 1.4rem;
-        height: 75px;
-        width: 95px;
+        height: 70px;
     }
 
     .display {
